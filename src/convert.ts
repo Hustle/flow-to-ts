@@ -89,7 +89,7 @@ export const convert = (flowCode: string, options?: any) => {
       plugins,
       ...options.prettierOptions,
     };
-    return prettier.format(tsCode, prettierOptions).trim();
+    return prettier.format(tsCode, prettierOptions);
   } else {
     return tsCode;
   }
